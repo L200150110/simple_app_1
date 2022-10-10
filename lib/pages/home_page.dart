@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, library_private_types_in_public_api, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import '../utils/emoji.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -97,6 +98,72 @@ class _HomePageState extends State<HomePage> {
                     Icons.more_horiz,
                     color: Colors.white,
                   )
+                ],
+              ),
+              SizedBox(height: 25),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  // bad
+                  Column(
+                    children: [
+                      Emoji(
+                        emoji: '😣',
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Bad',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                  // fine
+                  Column(
+                    children: [
+                      Emoji(
+                        emoji: '🙂',
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Fine',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                  // well
+                  Column(
+                    children: [
+                      Emoji(
+                        emoji: '😀',
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Well',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
+                  // excelent
+                  Column(
+                    children: [
+                      Emoji(
+                        emoji: '🥰',
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Excelent',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  ),
                 ],
               ),
             ],
