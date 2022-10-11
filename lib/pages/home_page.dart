@@ -59,8 +59,9 @@ class _HomePageState extends State<HomePage> {
                 // notif
                 Container(
                   decoration: BoxDecoration(
-                      color: Colors.blue[600],
-                      borderRadius: BorderRadius.circular(12)),
+                    color: Colors.blue[600],
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                   padding: EdgeInsets.all(12),
                   child: Icon(
                     Icons.notifications,
