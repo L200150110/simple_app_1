@@ -52,7 +52,6 @@ class _HomePageState extends State<HomePage> {
                     '10 Oct 2022',
                     style: TextStyle(
                       color: Colors.blue[200],
-                      // fontSize: 16,
                     ),
                   ),
                 ]),
@@ -168,11 +167,12 @@ class _HomePageState extends State<HomePage> {
             child: Container(
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  color: Colors.grey[200],
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(30),
-                    topRight: Radius.circular(30),
-                  )),
+                color: Colors.grey[200],
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(30),
+                  topRight: Radius.circular(30),
+                ),
+              ),
               child: Padding(
                 padding:
                     const EdgeInsets.symmetric(horizontal: 25.0, vertical: 5.0),
@@ -185,12 +185,14 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Excercises',
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20,
-                            color: Colors.grey[700],
-                          )),
+                      Text(
+                        'Excercises',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.grey[700],
+                        ),
+                      ),
                       Icon(Icons.more_horiz, color: Colors.grey[700]),
                     ],
                   ),
