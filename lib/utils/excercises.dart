@@ -19,55 +19,60 @@ class Excercises extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 6.0),
       child: Container(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(16),
-            // boxShadow: BoxShadow.lerpList(0, 1, 0),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: color,
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      padding: const EdgeInsets.all(8.0),
-                      child: Icon(
-                        icon,
-                        color: Colors.white,
-                        size: 30,
-                      ),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(16),
+          // boxShadow: BoxShadow.lerpList(0, 1, 0),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(12.0),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: color,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      icon,
+                      color: Colors.white,
+                      size: 30,
                     ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(exercisesTitle,
-                          style: const TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                          )),
-                      const SizedBox(height: 5),
-                      Text('$numberExercises Excercises',
-                          style: const TextStyle(
-                            color: Colors.grey,
-                            fontSize: 14,
-                          )),
-                    ],
-                  )
-                ],
-              ),
-              const Padding(
-                padding: EdgeInsets.all(20.0),
-                child: Icon(Icons.more_horiz),
-              )
-            ],
-          )),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      exercisesTitle,
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    const SizedBox(height: 5),
+                    Text(
+                      '$numberExercises Excercises',
+                      style: const TextStyle(
+                        color: Colors.grey,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            ),
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: Icon(Icons.more_horiz),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
