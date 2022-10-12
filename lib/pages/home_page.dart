@@ -191,10 +191,10 @@ class _HomePageState extends State<HomePage> {
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 20,
-                          color: Colors.grey[700],
+                          color: Colors.grey[800],
                         ),
                       ),
-                      Icon(Icons.more_horiz, color: Colors.grey[700]),
+                      Icon(Icons.more_horiz, color: Colors.grey[800]),
                     ],
                   ),
                   Expanded(
